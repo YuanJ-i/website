@@ -40,7 +40,12 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png" />
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png" />
     
-	
+	<script>
+	function isHidden(oDiv){
+	var vDiv = document.getElementById(oDiv);
+	vDiv.style.display = (vDiv.style.display == 'none')?'block':'none';
+	}
+	</script>
     
 
 </head>
@@ -84,13 +89,86 @@
        <div class="container">
              
             <a name="directionsandprojects">
-             <h1>Directions &amp; Projects</h1></a>
+             <h1>Research Projects</h1></a>
             
+
            <section id="maincontent" class="twelve columns"><br></br>
-              
-              <h2><span class="circle alignleft">1</span><font color="#FF0000">Spintronics in Low Dimensional Quantum Materials</a></font><br></h2>
-              <h2><span class="circle alignleft">2</span><font color="#FF0000">Novel Materials and Interface States</a></font><br></h2>
-              <h2><span class="circle alignleft">3</span><font color="#FF0000">Molecular Beam Epitaxy</a></font><br></h2>
+              <h2>Our group focuses on the experimental studies related to spintronics and quantum materials, including:<br></h2>
+			  
+			  <div>
+			  <!-- @author: Yuan Ji 20190110-->
+              <h2><span class="circle alignleft">1</span><font color="#FF0000">Spin current as a probe for quantum materials </font><br></h2>
+			  </div>
+			  
+			  
+			   
+			   <div id="div1" class="twelve columns" style="padding-left:30px">
+			  
+			   <h3>We use the spin current for the probe of insulating quantum materials and the quantum interfaces, which can not be probed by other techniques easily.<br>
+               </h3>
+			   
+			  
+			   <div id="div1" class="positionleft six columns alpha">
+			  <h3> 1) Spin dynamics in superconductor/ferromagnetic heterostructures. Using spin current, we can probe the spin dynamics of the superconducting films from the magnetization dynamics due to the interface exchange interaction. <br>
+				</h3> 
+				<div align="middle"><img src=" images\publications\48.png" width="150" height="125"><br> <br><br></div>
+			  <h3>Ref:  Yunyan Yao et al. Physical Review B 97, 224414 (2018) </h3>
+			  </div>
+			  <div id="div1" class="positionleft five columns">
+			   
+			  <h3>2) Spin superfluidity. Using the spin current, we observed the experimental signatures for the spin superfluid ground state in canted antiferromagnetic Cr2O3 thin films.</h3>
+               <div align="middle">
+			  <img src=" images\publications\50.png" width="180" height="150" ><br>
+			  </div>
+			  <h3>Ref: Yuan Wei et al. Science Advances 4: eaat1098 (2018) </h3><br>
+			  </div>
+			  
+			  
+			   </div>
+			   
+			   <div>
+              <h2><span class="circle alignleft">2</span><font color="#FF0000">Growth of quantum materials thin films</a></font><br></h2>
+			  </div>
+			 
+			  <div id="div2"  class="twelve columns" style="padding-left:30px">
+			  <h3> We use thin film growth techniques (MBE and PLD) to grow quantum materials and interfaces. <br></h3>
+			   <div id="div2" class="positionleft six columns alpha">
+			  <h3> 1) Spin polarized interfaces. The interface states are buried between two oxide materials, which can be ferromagnetic using ferromagnetic insulators, such as EuO, and Fe3O4, and Cr2O3.<br></h3>
+			  
+			  <div align="middle"><img src=" images\publications\54.png" width="180" height="150"><br></div>
+			  <h3> Ref: Hongrui Zhang et al. Physical Review Letters 121, 116803 (2018)</h3>
+			  </div>
+			  
+			  <div id="div2" class="positionleft five columns alpha">
+              <h3>2) Novel ferromagnetic oxide materials, such as topological Hall effect in oxide thin films. </h3><br>
+			  <div align="middle"><img src=" images\publications\49.png" width="180" height="150"><br></div>
+			  <h3> Ref: Yu Yun et al. Physical Review Materials 2, 034201 (2018)</h3>
+			   </div>
+			   </div>
+			   
+			  
+			   <div>
+              <h2><span class="circle alignleft">3</span><font color="#FF0000">Quantum materials for spintronics applications</a></font><br></h2>
+			  </div>
+			  
+			   <div id="div3" class="twelve columns" style="padding-left:30px">
+			   <h3>We take the advantages of the special spin properties of quantum materials, and use them for the spintronics applications. <br></h3>
+			    <div id="div3" class="positionleft six columns alpha">
+			  <h3>
+			  1) Quantum materials for spin and charge conversion.  The generation and detection of spin current are the central topics in spintronics. These quantum materials, such as topological insulators, 2DEG, and nonconllinear antiferromagnets, provide special platform for the spin and charge conversion.
+              </h3>
+			  
+			  <div align="middle"><img src=" images\publications\51.png" width="180" height="150"><br></div>
+			  <h3> Ref:  Wei Han et al. npj Quantum Materials 3, 27 (2018)</h3> 
+			  </div>
+			  
+			  <div id="div3" class="positionleft five columns alpha">
+              <h3>2) 2D Ferromagnetism. When the ferromagnetism is confined in the 2D limit, new interesting properties could be observed, which might be useful for future spintronics applications.  </h3>
+			  <div align="middle"><img src=" images\publications\55.png" width="180" height="150"><br><br></div>
+			 <h3>Ref:  Wenyu Xing et al. Physical Review X, 9(1), 011026 (2019) </h3>
+			 </div></div>
+			  
+			  
               <div class="clear"></div><!-- clear float -->
               <div class="separator line"><div></div></div> 
            </section>      
@@ -99,35 +177,43 @@
     
        
         <div class="container">
-              <a name="facilities"><h1>Facilities</h1></a>
-
+              <a name="facilities" style="cursor:pointer" onclick="isHidden('div11')"><h1>Facilities</h1></a>
+     <div id="div11" style="display:none">
       <section id="maincontent" class="twelve columns"><br>
                 
                 <section id="content" class="positionleft six columns alpha">
                   <h2><span class="circle alignleft">1</span>MBE</h2>
-                  <img src="images/research/MBE_1.png" width="400" height="300"><br>
+				  <section id="content" class="positionleft three columns alpha">
+                  <img src="images/research/MBE_1.png" width="200" height="150"><br>
+				  </section>
 				  
+				  <section id="content" class="positionleft three columns alpha">
 				  <h3 style="line-height:25px">
 				  Installed in April 2016<br>
-				  Brand: <a href="https://www.mbe-komponenten.de/index.php">Dr. Eberl MBE-Komponenten GmbH</a><br>
+				  Brand: Dr. Eberl MBE-Komponenten GmbH<br>
 				 
-                  High vacuum condition: ~ 5×10E-11 mbar    <br>           
-                  Equipped with 7 thermal evaporation cell (Eu, Cr, Fe, La...) <br>
-				  Master: Ma Yang</h3>
-				
+                  High vacuum: ~ 5×10E-11 mbar    <br>           
+                  Equipped with 7 thermal evaporation cell<br>
+				  Master: Ma Yang </h3>
+				  </section>
              <p>&nbsp; </p>
         </section>
         
         <section id="content" class="positionright six columns alpha">
           <h2><span class="circle alignleft">2</span> Spectromag </h2>
-          <img src="images/research/spectroMag_2.png" width="400" height="300"><br>
+		  <section id="content" class="positionleft three columns alpha">
+          <img src="images/research/spectroMag_2.png" width="200" height="150"><br>
+		  </section>
+		  
+		  <section id="content" class="positionleft three columns alpha">
            <h3 style="line-height:25px"> Installed in November 2015<br>
-		         Brand: <a href="http://www.oxford-instruments.cn/">Oxford Instrument</a><br>
+		         Brand: Oxford Instrument<br>
                  Temperature: 1.5K-300K<br>
 			     Magnetic field: 7T max<br>
 			     Equipped with electrical-low-noise system<br>
 			     Master: Cai ranran
 				 </h3>
+		  </section>
         </section>
         <div class="clear"></div><!-- clear float --> 
         </section>
@@ -138,22 +224,32 @@
                 
                 <section id="content" class="positionleft six columns alpha">
                     <h2><span class="circle alignleft">3</span>Closed Cycle</h2>
-                    <img src="images/research/closedcycle.png" width="400" height="300"><br>
+					
+					<section id="content" class="positionleft three columns alpha">
+                    <img src="images/research/closedcycle.png" width="200" height="150"><br>
+					</section>
+					<section id="content" class="positionleft three columns alpha">
                     <h3 style="line-height:25px">Installed in September 2016<br>
                     Temperature: down to 4K<br>
 					Magnetic field: 1000 Gs<br>
 					Equipped with optical table.<br>
 					Master: Chen Yangyang</h3>
+					</section>
                 </section>
 				
 				<section id="content" class="positionright six columns alpha">
                     <h2><span class="circle alignleft">4</span>Dynacool PPMS<br></h2>   
-                    <img src="images/research/dynacool_3.png" alt="" width="400" height="300" class="scale-with-grid" /> 
+					<section id="content" class="positionleft three columns alpha">
+                    <img src="images/research/dynacool_3.png" alt="" width="200" height="150" class="scale-with-grid" /> 
+					</section>
+					
+					<section id="content" class="positionleft three columns alpha">
 					<h3 style="line-height:25px">Installed in June 2018<br>
-                       Brand: <a href="https://www.qdusa.com/">Quantum Design</a><br>
+                       Brand: Quantum Design<br>
 					Temperature: 2K-300K<br>
 					Magnetic field: ±9T max<br>
                     Master: Xing wenyu</h3>
+					</section>
 					</section>
             <div class="clear"></div><!-- clear float --> 
             </section>
@@ -162,56 +258,75 @@
                 
                 <section id="content" class="positionleft six columns alpha">
                     <h2><span class="circle alignleft">5</span>Optical Microscope</h2>
-                    <img src="images/research/optical microscope_2.png" width="400" height="300">
+					<section id="content" class="positionleft three columns alpha">
+                    <img src="images/research/optical microscope_2.png" width="200" height="150">
+					</section>
+					<section id="content" class="positionleft three columns alpha">
                     <h3 style="line-height:25px">Installed in January 2015<br>
 					Brand: Nikon<br>
                     Fabricate 2D meterials<br>
 					Master: Cai ranran</h3>
-                    
+                    </section>
                
                 </section>
 				
 				
-				 <div class="clear"></div><!-- clear float --> 
-			  <div class="separator line"><div></div></div>
+				
 		
             </section>
 			
 			
-             
+           </div>  
               
+			   <div class="clear"></div><!-- clear float --> 
+			  <div class="separator line"><div></div></div>
         </div>
 		
 	    <div class="container">
-			<a name="shared facilities"><h1>Shared Facilities</h1></a>
+			<a name="shared facilities" style="cursor:pointer" onclick="isHidden('div12')"><h1>Shared Facilities</h1></a>
+			   <div id="div12" style="display:none">
 				<section id="maincontent" class="twelve columns"> 
 					<section id="content" class="positionleft six columns alpha">
 						<h2><span class="circle alignleft">6</span>FEI NanoLab DualBeam System<br></h2>   
-						<img src="images/research/SEM.jpg" alt="" width="400" height="300" class="scale-with-grid" /> 
+						<section id="content" class="positionleft three columns alpha">
+						<img src="images/research/SEM.jpg" alt="" width="200" height="150" class="scale-with-grid" /> 
+						</section>
+						<section id="content" class="positionleft three columns alpha">
 						<h3>Shared facility in <a href="http://icqmnanofab.pku.edu.cn/index.php/en/equipment">Nanofabrication Laboratory</a> by ICQM</h3>
+						</section>
 					</section>
 					
 					<section id="content" class="positionright six columns alpha">
 						<h2><span class="circle alignleft">7</span>MPMS SQUID<br></h2>   
-						<img src="images/research/mpms_4.png" alt="" width="400" height="300" class="scale-with-grid" /> 
-						<br><br>
+						<section id="content" class="positionleft three columns alpha">
+						<img src="images/research/mpms_4.png" alt="" width="200" height="150" class="scale-with-grid" /> 
+						</section>
+						
+						<section id="content" class="positionleft three columns alpha">
 						<h3>Shared facility in <a href="http://icqm.pku.edu.cn/PPlab/PPlab.htm">Physcial-Property Characterization Laboratory</a> by ICQM </h3>
+						</section>
 					</section>
-				
+				    </section>
 					<div class="clear"></div><!-- clear float --> 
-				</section>
+				
 				
 				<section id="maincontent" class="twelve columns"> 
 					<section id="content" class="positionleft six columns alpha">
 						<h2><span class="circle alignleft">8</span>High-resolution XRD<br></h2>   
-						<img src="images/research/xrd.png" alt="" width="400" height="300" class="scale-with-grid" /> 
+						<section id="content" class="positionleft three columns alpha">
+						<img src="images/research/xrd.png" alt="" width="200" height="150" class="scale-with-grid" /> 
+						</section>
+						
+						<section id="content" class="positionleft three columns alpha">
 						<h3>Shared facility in <a href="http://icqm.pku.edu.cn/PPlab/PPlab.htm">Physcial-Property Characterization Laboratory</a> by ICQM</h3>
+						</section>
 					</section>
-					
+				</section>
 					
 				
 					<div class="clear"></div><!-- clear float --> 
 				</section>
+				</div>
 		</div>
         
     <!-- END MAIN CONTENT -->

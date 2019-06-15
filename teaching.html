@@ -41,6 +41,12 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png" />
     
 	
+	<script>
+	function isHidden(oDiv){
+	var vDiv = document.getElementById(oDiv);
+	vDiv.style.display = (vDiv.style.display == 'none')?'block':'none';
+	}
+	</script>
     
 
 </head>
@@ -114,10 +120,31 @@
               <h3>2018 09/21 Class 1: Overview of Spintronics (<a href="Slides/Chapter 1-2018.pdf" target="_blank">Download links</a>)</h3>
 			 <h3>2018 09/28 Class 2: Magnetism and Magnetic Materials-Part 1 (<a href="Slides/Chapter 2 Part 1-2018.pdf" target="_blank">Download link</a>)</h3>
 			 <h3>2018 10/12 Class 3: Magnetism and Magnetic Materials-Part 2 (<a href="Slides/Chapter 2 Part 2-2018.pdf" target="_blank">Download link</a>)</h3>
-			 <h3>2018 10/19 Class 4: Magnetoresistance (<a href="Slides/Chapter 3-2018.pdf" target="_blank">Download link</a>)</h3
-			   <h4>&nbsp;</h4>
-                <h3><img src="images/publications/icon8.png" alt="" class="alignleft" /></a>
-          <a name="publications2017"></a>2017 Fall</h3>
+			 <h3>2018 10/19 Class 4: Magnetoresistance (<a href="Slides/Chapter 3-2018.pdf" target="_blank">Download link</a>)</h3>
+			 <h3>2018 10/26 Class 5: Spin Valves-Part 1 (<a href="Slides/Chapter 4 part 1-2018.pdf" target="_blank">Download link</a>)</h3>
+			 <h3>2018 11/2 Class 6: Spin Valves-Part 2 (<a href="Slides/Chapter 4 part 2-2018.pdf" target="_blank">Download link</a>)</h3>
+			  <h3>2018 11/9 Class 7: Spin Valves-Part 3 (<a href="Slides/Chapter 4 part 3-2018.pdf" target="_blank">Download link</a>)</h3>
+			  <h3>2018 11/16 Class 8: Spin transfer torque 1 (<a href="Slides/Chapter 5-1 2018.pdf" target="_blank">Download link</a>)</h3>
+			   <h3>2018 11/23 Class 9: Spin transfer torque 2 (<a href="Slides/Chapter 5-2 2018.pdf" target="_blank">Download link</a>)</h3>
+			   <h3>2018 11/30 Class 10: Spin Caloritronics(<a href="Slides/Chapter 6 Spin Caloritronics-2018.pdf" target="_blank">Download link</a>)</h3>
+			   <h3>2018 12/7 Class 11:  Topological spintronics (<a href="Slides/Chapter 7-2018.pdf" target="_blank">Download link</a>)</h3>
+			   <h3>2018 12/14 Class 12: Spintronics in Antiferromagnets (<a href="Slides/Chapter8-2018.pdf" target="_blank">Download link</a>)</h3>
+			   
+			   <h3>2018 12/21 Class 13: Student presentations</h3>
+			   <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Magnon Bose Einstein Condensation" by Mengyun He, Siheng Li, Na Li, Huimin Sun and Wenjie Chen (<a href="Slides\2018pre\Magnon BEC 2018 12-21.pdf" target="_blank">Download link</a>) </h4>
+				<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“Spin field effect transistor” by Shixiong Zhang, Jie Yang, Pengfei Zhu, Jiaji Zhao, Dong Liang and Shilei Din(<a href="Slides\2018pre\Spin FET 2018 12-21.pdf" target="_blank">Download link</a>) </h4>
+				
+				<h3>2018 12/28 Class 14: Student presentations</h3>
+				<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Quantum Spin Liquid in Kitaev Model" by Kaiwei Sun, Nianze Shang, Yifan Wang and Yuan Ji (<a href="Slides\2018pre\QSL.pdf" target="_blank">Download link</a>) </h4>
+				<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Spin Hall Effect" by Lili zhao, Shan Wang, Jiaojie Yan, Shaomian Qi, Longfei Li and Zhen Liu(<a href="Slides\2018pre\SHE.pdf" target="_blank">Download link</a>) </h4>
+				<h4>&nbsp;</h4>
+				
+				
+				
+                <h3><img src="images/publications/icon8.png" alt="" class="alignleft" >
+				<a name="publications2017" style="cursor:pointer" onclick="isHidden('div1')"><h3>2017 Fall</h3></a>
+		  
+		  <div id="div1" style="display:none">
 		  
 		  <section id="maincontent" class="twelve columns">
              
@@ -166,8 +193,16 @@ semiconductors" by Xingchen Liu (<a href="Slides/Xingchen Liu.pdf" target="_blan
 <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Thermoelectric spin voltage in graphene" by Zhibin Zhang (<a href="Slides/Zhibin Zhang.pdf" target="_blank">Download link</a>) </h4>
 <p>&nbsp;</p>
 
+</div>
+
+             <img src="images/publications/icon8.png" alt="" class="alignleft" /><a style="cursor:pointer" onclick="isHidden('div2')"><h3>2016 Fall</h3></a>
+
+			 
+			  <div id="div2" style="display:none">
+			 
+			 
 			<section id="maincontent" class="twelve columns">
-             <h3> <img src="images/publications/icon8.png" alt="" class="alignleft" /><a name="publications2017"></a>2016 Fall</h3>
+            
                 <section id="content" class="positionleft six columns alpha">
                       <img src="Slides/picture-2016.jpg" alt="" width="400" height="250" />     
                 </section>
@@ -179,7 +214,7 @@ semiconductors" by Xingchen Liu (<a href="Slides/Xingchen Liu.pdf" target="_blan
             
 				</section>
              
-              
+              </div>
               <div class="clear"></div><!-- clear float --> 
               
             </div>
